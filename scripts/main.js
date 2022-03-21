@@ -20,7 +20,7 @@ function changeInfo (){
 
 console.log(window.innerWidth)
 $(window).scroll(function() {
-    if (window.innerWidth > 450){
+    if (window.innerWidth > 600){
         if ($(this).scrollTop() > 50) {
             $('.portfolio-tittle').slideDown();
         }
@@ -29,7 +29,7 @@ $(window).scroll(function() {
         }
     }
     else {
-        if ($(this).scrollTop() > 500) {
+        if ($(this).scrollTop() > 600) {
             $('.portfolio-tittle').slideDown();
         }
         else {
