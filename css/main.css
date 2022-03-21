@@ -141,6 +141,7 @@ nav ul li a{
 }
 .skills-buttons-block{
     width: 20%;
+    min-width: 180px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -379,7 +380,7 @@ main:before{
     right: 0;
 }
 .projects-slider .slick-arrow.slick-disabled{
-    opacity: 0.3;
+    opacity: 0;
 }
 .projects-slider .slick-dots{
     display: flex;
@@ -508,6 +509,11 @@ main:before{
     align-items: center;
     font-weight: 600;
     cursor: pointer;
+    color: black;
+    transition: 0.3s;
+}
+.my-cv-section .my-cv-link:hover{
+    color: #1076f6;
 }
 .my-cv-section .my-cv-link .download-icon{
     margin-bottom: 20px;
@@ -520,7 +526,47 @@ main:before{
     background: url(../imgs/172461_download_arrow_icon-2.svg) no-repeat;
 }
 
-
+@media screen and (max-width: 930px){
+    .skills-list ul li{
+        width: 80px;
+    }
+    .remark{
+        display: none;
+    }
+    .header-info p{
+        font-size: 25px;
+    }
+    .middle-block{
+        width: unset;
+    }
+}
+@media screen and (max-width: 620px){
+    .header-info{
+        height: unset;
+    }
+    .header-info text{
+        width: 70%;
+    }
+    .skills-container{
+        flex-direction: column;
+    }
+    .skills-buttons-block {
+        width: 60%;
+        margin-bottom: 50px;
+    }
+    .skills-buttons-block > button{
+        padding: 20px 0;
+    }
+    .skills-buttons-block > button:first-child{
+        margin-bottom: 30px;
+    }
+    .skills-block{
+        height: unset;
+    }
+    .skills-block:before{
+        top: 20%;
+    }
+}
 
 
 
