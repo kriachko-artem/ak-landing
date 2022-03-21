@@ -265,7 +265,6 @@ main:before{
     margin-right: 50px;
 }
 .projects-slider .item-content{
-    width: 24vw;
     transition: 0.3s;
 }
 .projects-slider .item-content:hover{
@@ -283,7 +282,6 @@ main:before{
     -moz-box-shadow: 0px 1px 31px 2px rgba(90, 112, 129, 0.71);
     box-shadow: 0px 1px 31px 2px rgba(90, 112, 129, 0.71);
     display: block;
-    height: 16vw;
     border-radius: 15px;
     margin-bottom: 10px;
     position: relative;

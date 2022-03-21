@@ -18,16 +18,25 @@ function changeInfo (){
     document.getElementById(this.name).style.display='flex';
 }
 
+console.log(window.innerWidth)
 $(window).scroll(function() {
-    // если пользователь прокрутил страницу более чем на 200px
-    if ($(this).scrollTop()>50) {
-        // то сделать кнопку scrollup видимой
-        $('.portfolio-tittle').slideDown();
+    if (window.innerWidth > 450){
+        if ($(this).scrollTop() > 50) {
+            $('.portfolio-tittle').slideDown();
+        }
+        else {
+            $('.portfolio-tittle').slideUp();
+        }
     }
-    // иначе скрыть кнопку scrollup
     else {
-        $('.portfolio-tittle').slideUp();
+        if ($(this).scrollTop() > 500) {
+            $('.portfolio-tittle').slideDown();
+        }
+        else {
+            $('.portfolio-tittle').slideUp();
+        }
     }
+
 });
 
 
@@ -44,6 +53,20 @@ $(document).ready(function() {
         easing: 'ease',
         touchThreshold: 30,
         variableWidth: false,
+        responsive: [
+            {
+                breakpoint: 670,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 450,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
     });
 })
 
