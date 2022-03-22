@@ -1,8 +1,7 @@
-html{
-    overflow-x: hidden;
-}
 .wrapper{
     height: 100%;
+    overflow-x: hidden;
+
 }
 :root{
     --main-text-color-day: #474747;
@@ -101,7 +100,8 @@ nav ul li a{
 
 .header-info .logo-holder{
     width: 100px;
-    height: 100px;
+    position: relative;
+    top: 15px;
 }
 
 .header-info .logo-holder img{
