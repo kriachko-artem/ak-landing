@@ -201,7 +201,7 @@ nav ul li a{
 .skills-list ul li .img-holder img{
     width: 100%;
 }
-.something-block{
+.experience-block{
     line-height: 140%;
     align-items: center;
 }
@@ -315,14 +315,13 @@ main:before{
     overflow: hidden;
     position: relative;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .projects-slider .item .description-block h3{
     font-weight: 600;
     margin-bottom: 5px;
-    transition: 0.1s;
-}
-.projects-slider .item .description-block p{
-    display: block;
     transition: 0.1s;
 }
 .projects-slider .item .description-block .label{
@@ -443,16 +442,18 @@ main:before{
     height: 90%;
     border-radius: 20px;
     padding: 50px;
-    background-color: grey;
+    background-color: #505050;
     box-sizing: border-box;
 }
 .description-area text h3{
+    color: white;
     font-size: 35px;
     font-weight: 600;
     letter-spacing: 4px;
     margin-bottom: 50px;
 }
 .description-area text p{
+    color: white;
     font-size: 24px;
     line-height: 130%;
     letter-spacing: 2px;
@@ -626,9 +627,31 @@ main:before{
         padding: 20px;
     }
 }
-
-
-
+@media screen and (max-width: 500px){
+    .middle-block{
+        width: 100%;
+    }
+    .skills-list ul{
+        width: 100%;
+        grid-template-columns: 50% 50%;
+        justify-items: center;
+    }
+    .skills-list ul li .img-holder{
+        width: 80px;
+    }
+    .skills-list ul li{
+        font-size: 20px;
+    }
+    .my-cv-section .contacts li{
+        margin-bottom: 10px;
+    }
+    .my-cv-section .contacts li:last-child{
+        margin-bottom: unset;
+    }
+    .my-cv-section .contacts{
+        margin-bottom: 40px;
+    }
+}
 
 
 
