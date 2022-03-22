@@ -642,6 +642,10 @@ main:before{
     .skills-list ul li{
         font-size: 20px;
     }
+    .my-cv-section{
+        flex-direction: column;
+        align-items: center;
+    }
     .my-cv-section .contacts li{
         margin-bottom: 10px;
     }
@@ -650,6 +654,10 @@ main:before{
     }
     .my-cv-section .contacts{
         margin-bottom: 40px;
+        width: 90%;
+    }
+    .my-cv-section .contacts li a{
+        font-size: 15px;
     }
 }
 
