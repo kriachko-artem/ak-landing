@@ -1,7 +1,10 @@
+*{
+    color: #464646;
+}
 .wrapper{
     height: 100%;
-    overflow-x: hidden;
-
+    overflow: hidden;
+    font-family: 'Raleway', sans-serif;
 }
 :root{
     --main-text-color-day: #474747;
@@ -487,12 +490,69 @@ main:before{
 /*CV Section*/
 
 .my-cv-section{
-    margin-top: 100px;
+    margin-top: 60px;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: stretch;
     position: relative;
     z-index: 1;
+    padding-bottom: 100px;
+}
+.my-cv-section ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.my-cv-section .contacts li span{
+    display: block;
+    width: 45px;
+    height: 35px;
+    transition: 0.3s;
+}
+.my-cv-section .contacts li.phone span{
+    background: url(../imgs/phone-black.svg) no-repeat
+}
+.my-cv-section .contacts li.phone:hover span{
+    background: url(../imgs/phone-blue.svg) no-repeat;
+}
+.my-cv-section .contacts li.telegram span{
+    background: url(../imgs/telegram-black.svg) no-repeat
+}
+.my-cv-section .contacts li.telegram:hover span{
+    background: url(../imgs/telegram-blue.svg) no-repeat;
+}
+.my-cv-section .contacts li.mail span{
+    background: url(../imgs/mail-black.svg) no-repeat
+}
+.my-cv-section .contacts li.mail:hover span{
+    background: url(../imgs/mail-blue.svg) no-repeat
+}
+.my-cv-section .contacts li.linked span{
+    background: url(../imgs/linked-black.svg) no-repeat
+}
+.my-cv-section .contacts li.linked:hover span{
+    background: url(../imgs/linked-blue.svg) no-repeat
+}
+
+.my-cv-section .contacts li a{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #222222;
+    margin-bottom: 10px;
+}
+.my-cv-section .contacts li a .num{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.my-cv-section .contacts li:hover a{
+    color: #1076f6;
+}
+.my-cv-section .contacts li a:last-child{
+    margin-bottom: unset;
 }
 .my-cv-section .my-cv-link{
     display: flex;
@@ -502,6 +562,7 @@ main:before{
     cursor: pointer;
     color: black;
     transition: 0.3s;
+    margin-bottom: 25px;
 }
 .my-cv-section .my-cv-link:hover{
     color: #1076f6;
@@ -556,6 +617,13 @@ main:before{
     }
     .skills-block:before{
         top: 20%;
+    }
+    .description-area .close-button{
+        display: none;
+    }
+    .description-area{
+        height: unset;
+        padding: 20px;
     }
 }
 
