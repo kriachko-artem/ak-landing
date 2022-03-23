@@ -108,7 +108,9 @@ function closeDescription (){
 
 }
 
-
+window.onload = function (){
+    console.log('hi')
+}
 
 
 
