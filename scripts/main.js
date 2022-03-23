@@ -109,7 +109,8 @@ function closeDescription (){
 }
 
 window.onload = function (){
-    console.log('hi')
+    document.querySelector('body').classList.add('loaded');
+    document.querySelector('html').style.opacity = '1';
 }
 
 
