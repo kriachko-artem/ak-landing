@@ -266,7 +266,6 @@ nav ul li a{
     content: '';
     position: absolute;
     left: -50%;
-    top: -50%;
     width: 200%;
     height: 300%;
     background-color: var(--day-color-op1);
@@ -762,9 +761,6 @@ main:before{
     }
     .skills-block{
         height: unset;
-    }
-    .skills-block:before{
-        top: 20%;
     }
     .description-area .close-button{
         display: none;
