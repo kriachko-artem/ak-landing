@@ -2,7 +2,9 @@
     color: #464646;
 }
 
-
+html{
+    overflow: hidden;
+}
 /*Loading*/
 
 /* Demo Styles */

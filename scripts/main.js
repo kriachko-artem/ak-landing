@@ -110,6 +110,7 @@ function closeDescription (){
 
 window.onload = function (){
     document.querySelector('body').classList.add('loaded');
+    document.querySelector('html').style.overflow = 'unset'
 }
 
 
