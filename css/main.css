@@ -408,6 +408,8 @@ main:before{
 }
 .projects-slider .item-content{
     transition: 0.3s;
+    perspective-origin: center;
+    perspective: 400px;
 }
 .projects-slider .item-content:hover{
     transform: scale(1.05);

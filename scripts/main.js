@@ -18,7 +18,7 @@ function changeInfo (){
     document.getElementById(this.name).style.display='flex';
 }
 
-console.log(window.innerWidth)
+
 $(window).scroll(function() {
     if (window.innerWidth > 600){
         if ($(this).scrollTop() > 50) {
@@ -112,6 +112,55 @@ window.onload = function (){
     document.querySelector('body').classList.add('loaded');
 }
 
+
+
+//3D animation
+
+if (window.innerWidth>600){
+    document.addEventListener('DOMContentLoaded', () => {
+        let centerX,centerY,xPositionFromCenter,yPositionFromCenter,transformX,transformY;
+        // Custom JS
+
+        const label = document.querySelectorAll('.preview')
+
+        label.forEach(item=>{
+            item.addEventListener('mouseover',setParameters)
+            item.addEventListener('mouseout', function (event){
+                target = this;
+                requestAnimationFrame(returnInitial)
+            })
+        })
+
+
+        function setParameters(){
+            target = this
+            centerX = target.clientWidth / 2;
+            centerY = target.clientHeight / 2;
+
+            this.addEventListener('mousemove', event => {
+
+                xPositionFromCenter = event.offsetX - centerX;
+                yPositionFromCenter = event.offsetY - centerY;
+
+                transformX = xPositionFromCenter/10;
+                transformY = -yPositionFromCenter/5;
+
+                requestAnimationFrame(animate3D)
+            })
+        }
+        function animate3D() {
+            gsap.to(target,{
+                transform: `rotateY(${transformX}deg) rotateX(${transformY}deg)`
+            });
+
+        }
+        function returnInitial(){
+            gsap.to(target,{
+                transform: `unset`
+            });
+        }
+    })
+}
 
 
 
