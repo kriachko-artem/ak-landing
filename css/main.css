@@ -232,7 +232,6 @@ nav ul li a{
     justify-content: space-between;
     position: relative;
     z-index: 1;
-    height: 52vh;
 }
 
 .header-info text{
@@ -384,12 +383,7 @@ main:before{
     font-size: 30px;
     text-align: center;
     display: none;
-    animation: showProjectsTittle 1s linear;
     position: relative;
-}
-@keyframes showProjectsTittle {
-    0% { opacity: 0; }
-    100% { opacity: 100; }
 }
 
   /*slider*/
