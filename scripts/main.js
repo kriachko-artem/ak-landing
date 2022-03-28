@@ -18,49 +18,6 @@ function changeInfo (){
     document.getElementById(this.name).style.display='flex';
 }
 
-const portfolioTittle = document.querySelector('.portfolio-tittle')
-
-
-
-// window.addEventListener('scroll',function (){
-//     if ((document.querySelector('main').offsetTop-window.scrollY)
-//         < window.innerHeight/100*60){
-//             gsap.to(portfolioTittle,{
-//                 display: 'block',
-//                 opacity: 0,
-//         })
-//             gsap.to(portfolioTittle,{
-//                 opacity: 1,
-//                 height: 'auto',
-//             })
-//         console.log('Show')
-//     } else {
-//         gsap.to(portfolioTittle,{
-//             height: 0,
-//         })
-//             gsap.to(portfolioTittle,{
-//                 opacity: 1,
-//                 display: 'none',
-//             })
-//     }
-// })
-
-
-$(window).scroll(function() {
-    // если пользователь прокрутил страницу более чем на 200px
-    if ((document.querySelector('main').offsetTop-window.scrollY)
-        < window.innerHeight/100*60) {
-        // то сделать кнопку scrollup видимой
-        $('.portfolio-tittle').slideDown()
-    }
-    // иначе скрыть кнопку scrollup
-    else {
-        $('.portfolio-tittle').slideUp()
-    }
-});
-
-
-
 
 
 //slider
