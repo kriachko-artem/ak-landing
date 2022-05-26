@@ -658,27 +658,27 @@ main:before{
 .my-cv-section .contacts li.phone span{
     background: url(../imgs/phone-black.svg) no-repeat
 }
-.my-cv-section .contacts li.phone:hover span{
-    background: url(../imgs/phone-blue.svg) no-repeat;
-}
+/*.my-cv-section .contacts li.phone:hover span{*/
+/*    background: url(../imgs/phone-blue.svg) no-repeat;*/
+/*}*/
 .my-cv-section .contacts li.telegram span{
     background: url(../imgs/telegram-black.svg) no-repeat
 }
-.my-cv-section .contacts li.telegram:hover span{
-    background: url(../imgs/telegram-blue.svg) no-repeat;
-}
+/*.my-cv-section .contacts li.telegram:hover span{*/
+/*    background: url(../imgs/telegram-blue.svg) no-repeat;*/
+/*}*/
 .my-cv-section .contacts li.mail span{
     background: url(../imgs/mail-black.svg) no-repeat
 }
-.my-cv-section .contacts li.mail:hover span{
-    background: url(../imgs/mail-blue.svg) no-repeat
-}
+/*.my-cv-section .contacts li.mail:hover span{*/
+/*    background: url(../imgs/mail-blue.svg) no-repeat*/
+/*}*/
 .my-cv-section .contacts li.linked span{
     background: url(../imgs/linked-black.svg) no-repeat
 }
-.my-cv-section .contacts li.linked:hover span{
-    background: url(../imgs/linked-blue.svg) no-repeat
-}
+/*.my-cv-section .contacts li.linked:hover span{*/
+/*    background: url(../imgs/linked-blue.svg) no-repeat*/
+/*}*/
 
 .my-cv-section .contacts li a{
     display: flex;
@@ -719,9 +719,9 @@ main:before{
     transition: 0.3s;
     background: url(../imgs/172461_download_arrow_icon.svg) no-repeat;
 }
-.my-cv-section .my-cv-link:hover .download-icon{
-    background: url(../imgs/172461_download_arrow_icon-2.svg) no-repeat;
-}
+/*.my-cv-section .my-cv-link:hover .download-icon{*/
+/*    background: url(../imgs/172461_download_arrow_icon-2.svg) no-repeat;*/
+/*}*/
 
 @media screen and (max-width: 930px){
     .skills-list ul li{
